@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- art -->
+  <project path="art" name="art" remote="afx" />
+
+  <!-- bionic -->
+  <project path="bionic" name="bionic" remote="afx" />
+
+  <!-- bootable  -->
+  <project path="bootable/recovery" name="bootable_recovery" remote="afx" />
+
+  <!-- build -->
+  <project path="build/make" name="build" remote="afx" >
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="build_soong" remote="afx" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+  
+  <!-- external-->
+  <project path="external/faceunlock" name="external_faceunlock" remote="clownui-gitlab" />
+
+  <!-- frameworks  -->
+  <project path="frameworks/av" name="frameworks_av" remote="afx" />
+  <project path="frameworks/base" name="frameworks_base" remote="afx" />
+  <project path="frameworks/native" name="frameworks_native" remote="afx" />
+  <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" remote="afx" />
+
+  <!-- hardware -->
+  <project path="hardware/afterlife/interfaces" name="hardware_afterlife_interfaces" remote="afx"  />
+  <project path="hardware/interfaces" name="hardware_interfaces" remote="afx" />
+  <project path="hardware/libhardware" name="hardware_libhardware" remote="afx" />
+  <project path="hardware/xiaomi" name="hardware_xiaomi" remote="clownui"  />
+  <project path="hardware/afterlife/compat" name="hardware_afterlife_compat" remote="afx" />
+
+  <!-- libcore -->
+  <project path="libcore" name="libcore" remote="clownui" />
+
+  <!-- packages -->
+  <project path="packages/apps/FaceUnlockService" name="packages_apps_FaceUnlockService" remote="clownui-gitlab" />
+  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="afx" />
+  <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="clownui" />
+  <project path="packages/apps/RepainterServicePriv" name="packages_apps_RepainterServicePriv"  remote="clownui" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="afx" />
+  <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" remote="clownui" />
+  <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" remote="clownui" />
+  <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" remote="clownui" />
+  <project path="packages/modules/Permission" name="packages_modules_Permission"  remote="clownui" />
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="clownui"  />
+  <project path="packages/services/Telephony" name="packages_services_Telephony" remote="clownui"  />
+  <project path="packages/apps/Updater" name="packages_apps_Updater" remote="clownui"  />
+  <project path="packages/apps/Aperture" name="packages_apps_Aperture" remote="clownui" />
+  <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="clownui" />
+
+  <!-- sepolicy -->
+  <project path="device/afterlife/sepolicy" name="device_afterlife_sepolicy"  remote="afx"  />
+  <project path="device/qcom/sepolicy_vndr" name="device_qcom_sepolicy_vndr"  remote="afx"  />
+  <project path="device/qcom/sepolicy_vndr-legacy-um" name="device_qcom_sepolicy_vndr" remote="afx" revision="tiramisu-legacy-um"  />
+  <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="afx"  />
+  <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="afx" />
+
+  <!-- system -->
+  <project path="system/core" name="system_core" remote="afx" />
+  <project path="system/libziparchive" name="system_libziparchive" remote="clownui" />
+  <project path="system/security" name="system_security" remote="clownui" />
+  <project path="system/libhidl" name="system_libhidl" remote="clownui" />
+  <project path="system/sepolicy" name="system_sepolicy" remote="clownui" />
+  <project path="system/update_engine" name="system_update_engine" remote="clownui" />
+  <project path="system/vold" name="system_vold" remote="clownui" />
+
+  <!-- Official-->
+  <project path="official" name="ClownUI-Devices/official" revision="tiramisu" remote="github" />
+
+  <!-- system tools -->
+   <project path="system/tools/mkbootimg" name="system_tools_mkbootimg" remote="clownui" />
+
+  <!-- tools repos -->
+  <project path="tools/extract-utils" name="tools_extract-utils" remote="afx" />
+
+  <!-- vendor gms -->
+  <project path="vendor/gms" name="vendor_gms" remote="clownui-gitlab" revision="tiramisu" />
+
+  <!-- vendor -->
+  <project path="vendor/afterlife" name="vendor_afterlife" remote="afx"  />
+
+  <!-- vendor support -->
+  <project path="vendor/support" name="vendor_support" remote="afx"  />
+
+  <!-- Toolchain -->
+  <project path="prebuilts/clang/host/linux-x86/clang-rastamod" name="RastaMod69-Clang" revision="clang-12.0" remote="clownui" />
+
+  <!-- manifest -->
+  <project path="manifest" name="android_manifest" remote="afx"  />
+
+</manifest>

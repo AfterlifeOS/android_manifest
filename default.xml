@@ -2,11 +2,56 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch=".."
+           fetch="https://android.googlesource.com"
            review="https://android-review.googlesource.com/" />
   <default revision="refs/tags/android-13.0.0_r43"
            remote="aosp"
-           sync-j="4" />
+           sync-j="4"
+           sync-c="true"
+           sync-f="true" />
+
+  <remote  name="github"
+           fetch="https://github.com/" />
+
+  <remote  name="gitlab"
+           fetch="https://gitlab.com/" />
+
+  <remote  name="arrow"
+           fetch="https://github.com/ArrowOS"
+           review="https://review.arrowos.net/"
+           revision="refs/heads/arrow-13.1" />
+
+  <remote  name="lineage"
+           fetch="https://github.com/lineageos"
+           revision="refs/heads/lineage-20.0" />
+
+  <remote  name="yaap"
+           fetch="https://github.com/yaap"
+           revision="refs/heads/thirteen" />
+
+  <remote name="pixelexperience"
+          fetch="https://github.com/PixelExperience"
+          revision="thirteen"  />
+
+  <remote name="pixelexperience-gitlab"
+          fetch="https://gitlab.pixelexperience.org/android"
+          revision="thirteen" />
+
+  <remote name="clownui"
+          fetch="https://github.com/ClownUI"
+          revision="tiramisu" />
+
+  <remote name="afx"
+          fetch="https://github.com/AfterLifePrjkt13"
+          revision="tiramisu" />
+
+  <remote name="protonplus"
+          fetch="https://github.com/protonplus-org"
+          revision="tm-qpr2" />
+
+  <remote  name="clownui-gitlab"
+           fetch="https://gitlab.com/ClownUI"
+           revision="refs/heads/tiramisu" />
 
   <superproject name="platform/superproject" remote="aosp" revision="android-13.0.0_r43"/>
   <contactinfo bugurl="go/repo-bug" />
@@ -759,7 +804,6 @@
   <project path="frameworks/ex" name="platform/frameworks/ex" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/hardware/interfaces" name="platform/frameworks/hardware/interfaces" groups="pdk" />
   <project path="frameworks/layoutlib" name="platform/frameworks/layoutlib" groups="pdk-cw-fs,pdk-fs" />
-  <project path="frameworks/libs/systemui" name="platform/frameworks/libs/systemui" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/libs/modules-utils" name="platform/frameworks/libs/modules-utils" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/libs/net" name="platform/frameworks/libs/net" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/libs/native_bridge_support" name="platform/frameworks/libs/native_bridge_support" groups="pdk" />
@@ -925,7 +969,6 @@
   <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer" groups="pdk-fs" />
   <project path="packages/apps/ImsServiceEntitlement" name="platform/packages/apps/ImsServiceEntitlement" groups="pdk-fs" />
   <project path="packages/apps/KeyChain" name="platform/packages/apps/KeyChain" groups="pdk-fs" />
-  <project path="packages/apps/Launcher3" name="platform/packages/apps/Launcher3" groups="pdk-fs" />
   <project path="packages/apps/LegacyCamera" name="platform/packages/apps/LegacyCamera" groups="pdk-fs" />
   <project path="packages/apps/ManagedProvisioning" name="platform/packages/apps/ManagedProvisioning" groups="pdk-fs" />
   <project path="packages/apps/Messaging" name="platform/packages/apps/Messaging" groups="pdk-fs" />
@@ -953,7 +996,6 @@
   <project path="packages/apps/Test/connectivity" name="platform/packages/apps/Test/connectivity" groups="pdk" />
   <project path="packages/apps/TimeZoneData" name="platform/packages/apps/TimeZoneData" groups="pdk" />
   <project path="packages/apps/TimeZoneUpdater" name="platform/packages/apps/TimeZoneUpdater" groups="pdk" />
-  <project path="packages/apps/ThemePicker" name="platform/packages/apps/ThemePicker" groups="pdk-fs" />
   <project path="packages/apps/Traceur" name="platform/packages/apps/Traceur" groups="pdk-fs" />
   <project path="packages/apps/TvSettings" name="platform/packages/apps/TvSettings" groups="pdk-fs" />
   <project path="packages/apps/TV" name="platform/packages/apps/TV" groups="pdk" />
@@ -1183,5 +1225,11 @@
   <project path="tools/tradefederation/prebuilts" name="platform/tools/tradefederation/prebuilts" groups="pdk,tradefed" clone-depth="1" />
   <project path="tools/treble" name="platform/tools/treble" groups="tools,pdk" />
   <project path="tools/trebuchet" name="platform/tools/trebuchet" groups="tools,cts,pdk,pdk-cw-fs,pdk-fs" />
+  
+    <!-- AfterLife -->
+  <include name="snippets/remove.xml"/>
+  <include name="snippets/external.xml"/>
+  <include name="snippets/afterlife.xml"/>
+
   <!-- END open-source projects -->
 </manifest>
