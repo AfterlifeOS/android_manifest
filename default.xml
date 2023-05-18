@@ -2,11 +2,13 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch=".."
+           fetch="https://android.googlesource.com"
            review="https://android-review.googlesource.com/" />
   <default revision="refs/tags/android-13.0.0_r61"
            remote="aosp"
-           sync-j="4" />
+           sync-j="4"
+           sync-c="true"
+           sync-f="true" />
 
   <superproject name="platform/superproject" remote="aosp" revision="android-13.0.0_r61"/>
   <contactinfo bugurl="go/repo-bug" />
@@ -74,9 +76,6 @@
   <project path="device/google/coral" name="device/google/coral" groups="device,coral,generic_fs" />
   <project path="device/google/coral-kernel" name="device/google/coral-kernel" groups="device,coral,generic_fs" clone-depth="1" />
   <project path="device/google/coral-sepolicy" name="device/google/coral-sepolicy" groups="device,coral,generic_fs" />
-  <project path="device/google/felix" name="device/google/felix" groups="device,felix" />
-  <project path="device/google/felix-sepolicy" name="device/google/felix-sepolicy" groups="device,felix" />
-  <project path="device/google/felix-kernel" name="device/google/felix-kernel" groups="device,felix" clone-depth="1" />
   <project path="device/google/gs101" name="device/google/gs101" groups="device,slider,bluejay,pdk-gs-arm" />
   <project path="device/google/gs101-sepolicy" name="device/google/gs101-sepolicy" groups="device,slider,bluejay,pdk-gs-arm" />
   <project path="device/google/gs201" name="device/google/gs201" groups="device,cloudripper" />
@@ -95,9 +94,6 @@
   <project path="device/google/redbull-sepolicy" name="device/google/redbull-sepolicy" groups="device,redbull" />
   <project path="device/google/redfin" name="device/google/redfin" groups="device,redfin" />
   <project path="device/google/redfin-sepolicy" name="device/google/redfin-sepolicy" groups="device,redfin" />
-  <project path="device/google/tangorpro" name="device/google/tangorpro" groups="device,tangorpro" />
-  <project path="device/google/tangorpro-sepolicy" name="device/google/tangorpro-sepolicy" groups="device,tangorpro" />
-  <project path="device/google/tangorpro-kernel" name="device/google/tangorpro-kernel" groups="device,tangorpro" clone-depth="1" />
   <project path="device/google/sunfish" name="device/google/sunfish" groups="device,sunfish" />
   <project path="device/google/sunfish-kernel" name="device/google/sunfish-kernel" groups="device,sunfish" clone-depth="1" />
   <project path="device/google/sunfish-sepolicy" name="device/google/sunfish-sepolicy" groups="device,sunfish" />
@@ -768,7 +764,6 @@
   <project path="frameworks/ex" name="platform/frameworks/ex" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/hardware/interfaces" name="platform/frameworks/hardware/interfaces" groups="pdk" />
   <project path="frameworks/layoutlib" name="platform/frameworks/layoutlib" groups="pdk-cw-fs,pdk-fs" />
-  <project path="frameworks/libs/systemui" name="platform/frameworks/libs/systemui" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/libs/modules-utils" name="platform/frameworks/libs/modules-utils" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/libs/net" name="platform/frameworks/libs/net" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/libs/native_bridge_support" name="platform/frameworks/libs/native_bridge_support" groups="pdk" />
@@ -935,7 +930,6 @@
   <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer" groups="pdk-fs" />
   <project path="packages/apps/ImsServiceEntitlement" name="platform/packages/apps/ImsServiceEntitlement" groups="pdk-fs" />
   <project path="packages/apps/KeyChain" name="platform/packages/apps/KeyChain" groups="pdk-fs" />
-  <project path="packages/apps/Launcher3" name="platform/packages/apps/Launcher3" groups="pdk-fs" />
   <project path="packages/apps/LegacyCamera" name="platform/packages/apps/LegacyCamera" groups="pdk-fs" />
   <project path="packages/apps/ManagedProvisioning" name="platform/packages/apps/ManagedProvisioning" groups="pdk-fs" />
   <project path="packages/apps/Messaging" name="platform/packages/apps/Messaging" groups="pdk-fs" />
@@ -963,7 +957,6 @@
   <project path="packages/apps/Test/connectivity" name="platform/packages/apps/Test/connectivity" groups="pdk" />
   <project path="packages/apps/TimeZoneData" name="platform/packages/apps/TimeZoneData" groups="pdk" />
   <project path="packages/apps/TimeZoneUpdater" name="platform/packages/apps/TimeZoneUpdater" groups="pdk" />
-  <project path="packages/apps/ThemePicker" name="platform/packages/apps/ThemePicker" groups="pdk-fs" />
   <project path="packages/apps/Traceur" name="platform/packages/apps/Traceur" groups="pdk-fs" />
   <project path="packages/apps/TvSettings" name="platform/packages/apps/TvSettings" groups="pdk-fs" />
   <project path="packages/apps/TV" name="platform/packages/apps/TV" groups="pdk" />
@@ -1193,5 +1186,11 @@
   <project path="tools/tradefederation/prebuilts" name="platform/tools/tradefederation/prebuilts" groups="pdk,tradefed" clone-depth="1" />
   <project path="tools/treble" name="platform/tools/treble" groups="tools,pdk" />
   <project path="tools/trebuchet" name="platform/tools/trebuchet" groups="tools,cts,pdk,pdk-cw-fs,pdk-fs" />
+  
+    <!-- AfterLife -->
+  <include name="snippets/remove.xml"/>
+  <include name="snippets/external.xml"/>
+  <include name="snippets/afterlife.xml"/>
+
   <!-- END open-source projects -->
 </manifest>
