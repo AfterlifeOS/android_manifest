@@ -4,7 +4,7 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
            review="https://android-review.googlesource.com/" />
-  <default revision="refs/tags/android-13.0.0_r43"
+  <default revision="refs/tags/android-13.0.0_r50"
            remote="aosp"
            sync-j="4"
            sync-c="true"
@@ -53,7 +53,7 @@
            fetch="https://gitlab.com/ClownUI"
            revision="refs/heads/tiramisu" />
 
-  <superproject name="platform/superproject" remote="aosp" revision="android-13.0.0_r43"/>
+  <superproject name="platform/superproject" remote="aosp" revision="android-13.0.0_r50"/>
   <contactinfo bugurl="go/repo-bug" />
   <!-- BEGIN open-source projects -->
   <project path="build/make" name="platform/build" groups="pdk" >
@@ -907,6 +907,7 @@
   <project path="hardware/st/secure_element" name="platform/hardware/st/secure_element" groups="pdk" />
   <project path="hardware/st/secure_element2" name="platform/hardware/st/secure_element2" groups="pdk" />
   <project path="hardware/samsung/nfc" name="platform/hardware/samsung/nfc" groups="pdk" />
+  <project path="hardware/synaptics/wlan" name="platform/hardware/synaptics/wlan" groups="pdk" />
   <project path="hardware/ti/am57x" name="platform/hardware/ti/am57x" groups="pdk" />
   <project path="kernel/configs" name="kernel/configs" groups="vts,pdk" />
   <project path="kernel/prebuilts/4.19/arm64" name="kernel/prebuilts/4.19/arm64" groups="pdk" clone-depth="1" />
