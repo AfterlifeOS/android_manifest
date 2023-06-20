@@ -4,7 +4,7 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
            review="https://android-review.googlesource.com/" />
-  <default revision="refs/tags/android-13.0.0_r52"
+  <default revision="refs/tags/android-13.0.0_r55"
            remote="aosp"
            sync-j="4"
            sync-c="true"
@@ -53,7 +53,7 @@
            fetch="https://gitlab.com/ClownUI"
            revision="refs/heads/tiramisu" />
 
-  <superproject name="platform/superproject" remote="aosp" revision="android-13.0.0_r52"/>
+  <superproject name="platform/superproject" remote="aosp" revision="android-13.0.0_r55"/>
   <contactinfo bugurl="go/repo-bug" />
   <!-- BEGIN open-source projects -->
   <project path="build/make" name="platform/build" groups="pdk" >
@@ -134,6 +134,9 @@
   <project path="device/google/redbull-sepolicy" name="device/google/redbull-sepolicy" groups="device,redbull" />
   <project path="device/google/redfin" name="device/google/redfin" groups="device,redfin" />
   <project path="device/google/redfin-sepolicy" name="device/google/redfin-sepolicy" groups="device,redfin" />
+  <project path="device/google/tangorpro" name="device/google/tangorpro" groups="device,tangorpro" />
+  <project path="device/google/tangorpro-sepolicy" name="device/google/tangorpro-sepolicy" groups="device,tangorpro" />
+  <project path="device/google/tangorpro-kernel" name="device/google/tangorpro-kernel" groups="device,tangorpro" clone-depth="1" />
   <project path="device/google/sunfish" name="device/google/sunfish" groups="device,sunfish" />
   <project path="device/google/sunfish-kernel" name="device/google/sunfish-kernel" groups="device,sunfish" clone-depth="1" />
   <project path="device/google/sunfish-sepolicy" name="device/google/sunfish-sepolicy" groups="device,sunfish" />
