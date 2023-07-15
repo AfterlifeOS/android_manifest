@@ -4,7 +4,7 @@
 
 ## Getting Started ## 
 ---------------
-To get started with the ClownUI sources, you'll need to get
+To get started with the Afterlife sources, you'll need to get
 familiar with [Git and Repo](https://source.android.com/setup/build/downloading).
 
 ### Requirements
