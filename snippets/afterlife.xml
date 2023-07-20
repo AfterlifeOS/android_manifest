@@ -11,25 +11,13 @@
           fetch="https://github.com/ClownUI"
           revision="tiramisu" />
 
-  <remote name="superior"
-          fetch="https://github.com/SuperiorOS/"
-          revision="refs/heads/thirteen" />
-
-  <remote name="afx"
-          fetch="https://github.com/AfterLifePrjkt13"
-          revision="tiramisu" />
-
-  <remote name="protonplus"
-          fetch="https://github.com/protonplus-org"
-          revision="tm-qpr2" />
-
   <remote  name="clownui-gitlab"
            fetch="https://gitlab.com/ClownUI"
            revision="refs/heads/tiramisu" />
 
-  <remote  name="arrow"
-           fetch="https://github.com/arrowos"
-           revision="refs/heads/arrow-13.1" />
+  <remote name="afx"
+          fetch="https://github.com/AfterLifePrjkt13"
+          revision="tiramisu" />
 
   <!-- art -->
   <project path="art" name="art" remote="afx" />
@@ -53,21 +41,9 @@
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
-
-  <project path="vendor/qcom/opensource/commonsys-intf/display" name="android_vendor_qcom_opensource_display-commonsys-intf" groups="qcom,qssi" remote="arrow" />
-  <project path="vendor/qcom/opensource/commonsys/display" name="android_vendor_qcom_opensource_display-commonsys" groups="qcom,qssi" remote="arrow" />
-  <project path="vendor/qcom/opensource/display" name="android_vendor_qcom_opensource_display" remote="superior" />
-  <project path="vendor/qcom/opensource/interfaces" name="android_vendor_qcom_opensource_interfaces" groups="qcom,qssi" remote="arrow" />
   
   <!-- external-->
   <project path="external/faceunlock" name="external_faceunlock" remote="clownui-gitlab" />
-  <project path="external/e2fsprogs" name="android_external_e2fsprogs" remote="superior" />
-  <project path="external/gptfdisk" name="android_external_gptfdisk" remote="superior" />
-  <project path="external/jemalloc_new" name="android_external_jemalloc_new" remote="superior" />
-  <project path="external/mksh" name="android_external_mksh" remote="superior" />
-  <project path="external/selinux" name="android_external_selinux" remote="superior" />
-  <project path="external/tinycompress" name="android_external_tinycompress" remote="superior" />
-  <project path="external/tinyxml" name="android_external_tinyxml" remote="superior" />
 
   <!-- frameworks  -->
   <project path="frameworks/av" name="frameworks_av" remote="afx" />
@@ -100,35 +76,6 @@
   <project path="packages/apps/Updater" name="packages_apps_Updater" remote="clownui"  />
   <project path="packages/apps/Aperture" name="packages_apps_Aperture" remote="clownui" />
   <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="clownui" />
-
-  <!-- Qcom hals -->
-  <project path="hardware/qcom/wlan" name="android_hardware_qcom_wlan" remote="superior" />
-  <project path="hardware/qcom-caf/wlan" name="android_hardware_qcom-caf_wlan" remote="superior"/>
-
-  <!-- Audio hals -->
-  <project path="hardware/qcom-caf/sm8150/audio" name="android_hardware_qcom_audio" revision="thirteen-caf-sm8150" remote="superior" />
-  <project path="hardware/qcom-caf/sm8250/audio" name="android_hardware_qcom_audio" revision="thirteen-caf-sm8250" remote="superior" />
-  <project path="hardware/qcom-caf/sm8350/audio" name="android_hardware_qcom_audio" revision="thirteen-caf-sm8350" remote="superior" />
-  <project path="hardware/qcom-caf/msm8998/audio" name="android_hardware_qcom_audio" groups="qcom,legacy-qcom" revision="arrow-13.1-caf-msm8998" remote="arrow" />
-
-  <!-- Display hals -->
-  <project path="hardware/qcom-caf/sm8250/display" name="android_hardware_qcom_display" revision="thirteen-caf-sm8250" remote="superior" />
-  <project path="hardware/qcom-caf/sm8350/display" name="android_hardware_qcom_display" revision="thirteen-caf-sm8350" remote="superior" />
-  <project path="hardware/qcom-caf/msm8998/display" name="android_hardware_qcom_display" groups="qcom,legacy-qcom" revision="arrow-13.1-caf-msm8998" remote="arrow" />
-
-  <!-- Media hals -->
-  <project path="hardware/qcom-caf/sm8250/media" name="android_hardware_qcom_media" revision="thirteen-caf-sm8250" remote="superior" />
-  <project path="hardware/qcom-caf/sm8350/media" name="android_hardware_qcom_media" revision="thirteen-caf-sm8350" remote="superior" />
-  <project path="hardware/qcom-caf/msm8998/media" name="android_hardware_qcom_media" groups="qcom,legacy-qcom" revision="arrow-13.1-caf-msm8998" remote="arrow" />
-
-  <!-- Qcom vendor -->
-  <project path="vendor/nxp/opensource/commonsys/external/libnfc-nci" name="android_vendor_nxp_opensource_external_libnfc-nci" remote="superior" />
-  <project path="vendor/nxp/opensource/commonsys/frameworks" name="android_vendor_nxp_opensource_frameworks" remote="superior" />
-  <project path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" name="android_vendor_nxp_opensource_packages_apps_Nfc" remote="superior" />
-  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="superior" />
-  <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" remote="superior" />
-  <project path="vendor/qcom/opensource/power" name="android_vendor_qcom_opensource_power" remote="superior" />
-  <project path="vendor/qcom/opensource/vibrator" name="android_vendor_qcom_opensource_vibrator" remote="superior" />
 
   <!-- sepolicy -->
   <project path="device/afterlife/sepolicy" name="device_afterlife_sepolicy"  remote="afx"  />
@@ -164,8 +111,8 @@
   <!-- vendor support -->
   <project path="vendor/support" name="vendor_support" remote="afx"  />
 
-  <!-- Proton Clang -->
-  <project path="prebuilts/clang/host/linux-x86/clang-proton" name="kdrag0n/proton-clang" clone-depth="1" revision="master" remote="github" />
+  <!-- Toolchain -->
+  <project path="prebuilts/clang/host/linux-x86/clang-rastamod" name="RastaMod69-Clang" revision="clang-12.0" remote="clownui" />
 
   <!-- manifest -->
   <project path="manifest" name="android_manifest" remote="afx"  />
