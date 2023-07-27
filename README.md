@@ -14,13 +14,13 @@ familiar with [Git and Repo](https://source.android.com/setup/build/downloading)
 To initialize your local repository, use command:
 
 ```bash
-repo init -u https://github.com/AfterLifePrjkt13/android_manifest.git -b tiramisu
+repo init --depth=1 --no-repo-verify -u https://github.com/AfterLifePrjkt13/android_manifest.git -b 13x -g default,-mips,-darwin,-notdefault
 ```
 
 ## Then sync up: ##
 
 ```bash
-repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
+repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j8
 ```
 
 ### Build our source ###
@@ -28,7 +28,7 @@ repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 ```bash
 . build/envsetup.sh
 lunch afterlife_$devicecodename-userdebug
-make afterlife -j$
+m afterlife -j$
 ```
 
 -----------------------------------------------------------------------------
@@ -36,13 +36,7 @@ Credits:
 =======
  * [**CAF**](https://source.codeaurora.org)
  * [**AOSP**](https://android.googlesource.com)
- * [**ProtonPlus**](https://github.com/protonplus-org)
- * [**SuperiorOS**](https://github.com/SuperiorOS)
  * [**LineageOS**](https://github.com/LineageOS)
  * [**ArrowOS**](https://github.com/ArrowOS)
- * [**Xdroid OSS**](https://github.com/xdroid-oss)
- * [**AncientOS**](https://github.com/ancient-lab)
- * [**PixelExperience**](https://github.com/PixelExperience)
- * [**PixelOS**](https://github.com/PixelOS-AOSP)
- * [**ProjectBlaze**](https://github.com/ProjectBlaze)
+ * [**DroidX-UI**](https://github.com/DroidX-UI)
 -----------------------------------------------------------------------------

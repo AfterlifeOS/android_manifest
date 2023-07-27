@@ -7,75 +7,74 @@
   <remote  name="gitlab"
            fetch="https://gitlab.com/" />
 
-  <remote name="clownui"
-          fetch="https://github.com/ClownUI"
-          revision="tiramisu" />
+  <remote name="droidx"
+        fetch="https://github.com/DroidX-UI"
+        sync-j="8"
+        revision="13" />
 
-  <remote  name="clownui-gitlab"
-           fetch="https://gitlab.com/ClownUI"
-           revision="refs/heads/tiramisu" />
+  <remote name="gapps"
+        fetch="https://gitlab.com/OldCrocs"
+        revision="13" />
 
   <remote name="afx"
           fetch="https://github.com/AfterLifePrjkt13"
-          revision="tiramisu" />
+          revision="13x" />
 
-  <!-- art -->
-  <project path="art" name="art" remote="afx" />
-
-  <!-- bionic -->
-  <project path="bionic" name="bionic" remote="afx" />
-
-  <!-- bootable  -->
-  <project path="bootable/recovery" name="bootable_recovery" remote="afx" />
-
-  <!-- build -->
-  <project path="build/make" name="build" remote="afx" >
-    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
-    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
-    <linkfile src="core" dest="build/core" />
-    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
-    <linkfile src="target" dest="build/target" />
-    <linkfile src="tools" dest="build/tools" />
-  </project>
-  <project path="build/soong" name="build_soong" remote="afx" >
-    <linkfile src="root.bp" dest="Android.bp" />
-    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
-  </project>
-  
-  <!-- external-->
-  <project path="external/faceunlock" name="external_faceunlock" remote="clownui-gitlab" />
+  <!-- external repos -->
+  <project path="external/dwarves" name="platform/external/dwarves" remote="aosp" revision="3c8f7e8b2cf7ff902b71c42d00fda30f30114b07" />
+  <project path="external/faceunlock" name="external_faceunlock" remote="afx" />
 
   <!-- frameworks  -->
   <project path="frameworks/av" name="frameworks_av" remote="afx" />
   <project path="frameworks/base" name="frameworks_base" remote="afx" />
   <project path="frameworks/native" name="frameworks_native" remote="afx" />
+  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="afx" />
   <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" remote="afx" />
+
+  <!-- General repos -->
+  <project path="build/make" name="build" remote="afx" >
+     <copyfile src="core/root.mk" dest="Makefile" />
+     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+     <linkfile src="core" dest="build/core" />
+     <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+     <linkfile src="target" dest="build/target" />
+     <linkfile src="tools" dest="build/tools" />  
+  </project>
+  <project path="build/soong" name="build_soong" remote="afx" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+  <project path="art" name="art" groups="pdk" remote="afx" />
+  <project path="bionic" name="bionic" groups="pdk" remote="afx" />
+  <project path="bootable/recovery" name="bootable_recovery" remote="afx" />
 
   <!-- hardware -->
   <project path="hardware/afterlife/interfaces" name="hardware_afterlife_interfaces" remote="afx"  />
   <project path="hardware/interfaces" name="hardware_interfaces" remote="afx" />
+  <project path="hardware/qcom/gps" name="hardware_qcom_gps" remote="afx" />
   <project path="hardware/libhardware" name="hardware_libhardware" remote="afx" />
-  <project path="hardware/xiaomi" name="hardware_xiaomi" remote="clownui"  />
-  <project path="hardware/afterlife/compat" name="hardware_afterlife_compat" remote="afx" />
+  <project path="hardware/qcom-caf/wlan" name="hardware_qcom-caf_wlan" remote="afx" />
+  <project path="hardware/motorola" name="hardware_motorola" remote="afx" />
 
-  <!-- libcore -->
-  <project path="libcore" name="libcore" remote="clownui" />
-
-  <!-- packages -->
-  <project path="packages/apps/FaceUnlockService" name="packages_apps_FaceUnlockService" remote="clownui-gitlab" />
-  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="afx" />
-  <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="clownui" />
-  <project path="packages/apps/RepainterServicePriv" name="packages_apps_RepainterServicePriv"  remote="clownui" />
+  <!-- Packages repos -->
+  <project path="packages/apps/Aperture" name="packages_apps_Aperture" remote="afx" />
+  <project path="packages/apps/AfterLab" name="packages_apps_AfterLab" remote="afx" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="afx" />
-  <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" remote="clownui" />
-  <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" remote="clownui" />
-  <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" remote="clownui" />
-  <project path="packages/modules/Permission" name="packages_modules_Permission"  remote="clownui" />
-  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="clownui"  />
-  <project path="packages/services/Telephony" name="packages_services_Telephony" remote="clownui"  />
-  <project path="packages/apps/Updater" name="packages_apps_Updater" remote="clownui"  />
-  <project path="packages/apps/Aperture" name="packages_apps_Aperture" remote="clownui" />
-  <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="clownui" />
+  <project path="packages/resources/devicesettings" name="packages_resources_devicesettings" remote="afx" />
+  <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" remote="afx"/>
+  <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" remote="afx" />
+  <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="afx" />
+  <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" remote="afx" />
+  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="afx" />
+  <project path="packages/apps/WallpaperPicker2" name="packages_apps_WallpaperPicker2" remote="afx" />
+  <project path="packages/apps/FaceUnlockService" name="packages_apps_FaceUnlockService" remote="afx" />
+  <project path="packages/apps/ParallelSpace" name="packages_apps_ParallelSpace" remote="afx" />
+  <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" remote="afx" />
+  <project path="packages/apps/FMRadio" name="packages_apps_FMRadio" remote="droidx" />
+
+  <!-- External repos -->
+  <project path="external/piex" name="external_piex" remote="droidx" />
 
   <!-- sepolicy -->
   <project path="device/afterlife/sepolicy" name="device_afterlife_sepolicy"  remote="afx"  />
@@ -84,26 +83,13 @@
   <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="afx"  />
   <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="afx" />
 
-  <!-- system -->
-  <project path="system/core" name="system_core" remote="afx" />
-  <project path="system/libziparchive" name="system_libziparchive" remote="clownui" />
-  <project path="system/security" name="system_security" remote="clownui" />
-  <project path="system/libhidl" name="system_libhidl" remote="clownui" />
-  <project path="system/sepolicy" name="system_sepolicy" remote="clownui" />
-  <project path="system/update_engine" name="system_update_engine" remote="clownui" />
-  <project path="system/vold" name="system_vold" remote="clownui" />
-
-  <!-- Official-->
-  <project path="official" name="ClownUI-Devices/official" revision="tiramisu" remote="github" />
-
-  <!-- system tools -->
-   <project path="system/tools/mkbootimg" name="system_tools_mkbootimg" remote="clownui" />
-
-  <!-- tools repos -->
-  <project path="tools/extract-utils" name="tools_extract-utils" remote="afx" />
+  <!-- System repos -->
+  <project path="system/core" name="system_core" remote="droidx" />
+  <project path="system/sepolicy" name="system_sepolicy" remote="afx" />
+  <project path="system/qcom" name="system_qcom" remote="afx" />
 
   <!-- vendor gms -->
-  <project path="vendor/gms" name="vendor_gms" remote="clownui-gitlab" revision="tiramisu" />
+  <project path="vendor/gms" name="vendor_gms" remote="gapps" />
 
   <!-- vendor -->
   <project path="vendor/afterlife" name="vendor_afterlife" remote="afx"  />
@@ -111,8 +97,9 @@
   <!-- vendor support -->
   <project path="vendor/support" name="vendor_support" remote="afx"  />
 
-  <!-- Toolchain -->
-  <project path="prebuilts/clang/host/linux-x86/clang-rastamod" name="RastaMod69-Clang" revision="clang-12.0" remote="clownui" />
+  <project path="vendor/qcom/opensource/fm-commonsys" name="vendor_qcom_opensource_fm-commonsys" remote="afx" />
+  <project path="vendor/qcom/opensource/vibrator" name="vendor_qcom_opensource_vibrator" remote="afx" />
+  <project path="vendor/qcom/opensource/libfmjni" name="vendor_qcom_opensource_libfmjni" remote="afx" />
 
   <!-- manifest -->
   <project path="manifest" name="android_manifest" remote="afx"  />
