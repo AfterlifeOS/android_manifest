@@ -72,6 +72,7 @@
   <project path="packages/apps/ParallelSpace" name="packages_apps_ParallelSpace" remote="afx" />
   <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" remote="afx" />
   <project path="packages/apps/FMRadio" name="packages_apps_FMRadio" remote="droidx" />
+  <project path="packages/overlays/Themes" name="packages_overlays_Themes" remote="afx" />
 
   <!-- External repos -->
   <project path="external/piex" name="external_piex" remote="droidx" />
