@@ -24,6 +24,8 @@
   <project path="external/dwarves" name="platform/external/dwarves" remote="aosp" revision="3c8f7e8b2cf7ff902b71c42d00fda30f30114b07" />
   <project path="external/faceunlock" name="external_faceunlock" remote="afx" />
   <project path="external/themelib" name="external_themelib" remote="afx" />
+  <project path="external/colorkt" name="external_colorkt" remote="afx" />
+  <project path="external/piex" name="external_piex" remote="droidx" />
 
   <!-- frameworks  -->
   <project path="frameworks/av" name="frameworks_av" remote="afx" />
@@ -57,6 +59,7 @@
   <project path="hardware/libhardware" name="hardware_libhardware" remote="afx" />
   <project path="hardware/qcom-caf/wlan" name="hardware_qcom-caf_wlan" remote="afx" />
   <project path="hardware/motorola" name="hardware_motorola" remote="afx" />
+  <project path="hardware/lineage/livedisplay" name="hardware_lineage_livedisplay" remote="afx" />
 
   <!-- Packages repos -->
   <project path="packages/apps/Aperture" name="packages_apps_Aperture" remote="afx" />
@@ -73,10 +76,8 @@
   <project path="packages/apps/ParallelSpace" name="packages_apps_ParallelSpace" remote="afx" />
   <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" remote="afx" />
   <project path="packages/apps/FMRadio" name="packages_apps_FMRadio" remote="droidx" />
+  <project path="packages/apps/TouchGestures" name="packages_apps_TouchGestures" remote="afx" />
   <project path="packages/overlays/Themes" name="packages_overlays_Themes" remote="afx" />
-
-  <!-- External repos -->
-  <project path="external/piex" name="external_piex" remote="droidx" />
 
   <!-- sepolicy -->
   <project path="device/afterlife/sepolicy" name="device_afterlife_sepolicy"  remote="afx"  />
