@@ -17,6 +17,7 @@
       
   <!-- prebuilt repos -->
   <project path="prebuilts/tools-lineage" name="android_prebuilts_tools-lineage" clone-depth="1" remote="lineage" />
+  <project path="prebuilts/kernel-build-tools" name="kernel/prebuilts/build-tools" clone-depth="1" remote="aosp" revision="refs/tags/android-13.0.0_r0.60" />
 
   <!-- Packages Repos -->
   <project path="packages/apps/Nfc" name="android_packages_apps_Nfc" groups="apps_nfc,pdk-fs" remote="lineage" />
@@ -29,4 +30,8 @@
 
   <!-- Hardware Repo -->
    <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="lineage" revision="lineage-20"/>
+
+   <!-- Extract-utils -->
+  <project path="tools/extract-utils" name="android_tools_extract-utils" remote="lineage" revision="lineage-20.0" />
+  <project path="prebuilts/extract-tools" name="android_prebuilts_extract-tools" remote="lineage" revision="lineage-20.0" />
 </manifest>

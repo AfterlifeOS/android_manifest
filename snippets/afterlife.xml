@@ -28,9 +28,9 @@
   <project path="external/piex" name="external_piex" remote="droidx" />
 
   <!-- frameworks  -->
-  <project path="frameworks/av" name="frameworks_av" remote="afx" />
-  <project path="frameworks/base" name="frameworks_base" remote="afx" />
-  <project path="frameworks/native" name="frameworks_native" remote="afx" />
+  <project path="frameworks/av" name="frameworks_av" remote="afx" revision="13s" />
+  <project path="frameworks/base" name="frameworks_base" remote="afx" revision="13s" />
+  <project path="frameworks/native" name="frameworks_native" remote="afx" revision="13s" />
   <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="afx" />
   <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" remote="afx" />
 
@@ -63,8 +63,8 @@
 
   <!-- Packages repos -->
   <project path="packages/apps/Aperture" name="packages_apps_Aperture" remote="afx" />
-  <project path="packages/apps/AfterLab" name="packages_apps_AfterLab" remote="afx" />
-  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="afx" />
+  <project path="packages/apps/AfterLab" name="packages_apps_AfterLab" remote="afx" revision="13s" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="afx" revision="13s" />
   <project path="packages/resources/devicesettings" name="packages_resources_devicesettings" remote="afx" />
   <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" remote="afx"/>
   <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" remote="afx" />
@@ -95,7 +95,7 @@
   <project path="vendor/gms" name="vendor_gms" remote="gapps" />
 
   <!-- vendor -->
-  <project path="vendor/afterlife" name="vendor_afterlife" remote="afx"  />
+  <project path="vendor/afterlife" name="vendor_afterlife" remote="afx" revision="13s" />
 
   <!-- vendor support -->
   <project path="vendor/support" name="vendor_support" remote="afx" revision="13.1" />
