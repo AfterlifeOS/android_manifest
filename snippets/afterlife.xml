@@ -78,6 +78,11 @@
   <project path="packages/apps/FMRadio" name="packages_apps_FMRadio" remote="droidx" />
   <project path="packages/apps/TouchGestures" name="packages_apps_TouchGestures" remote="afx" />
   <project path="packages/overlays/Themes" name="packages_overlays_Themes" remote="afx" />
+  <project path="packages/apps/Calendar" name="packages_apps_Calendar" remote="afx" />
+  <project path="packages/apps/Contacts" name="packages_apps_Contacts" remote="afx" />
+  <project path="packages/apps/Dialer" name="packages_apps_Dialer" remote="afx" />
+  <project path="packages/apps/ExactCalculator" name="packages_apps_ExactCalculator" remote="afx" />
+  <project path="packages/apps/Messaging" name="packages_apps_Messaging" remote="afx" />
 
   <!-- sepolicy -->
   <project path="device/afterlife/sepolicy" name="device_afterlife_sepolicy"  remote="afx"  />
