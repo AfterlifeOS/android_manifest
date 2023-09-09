@@ -26,6 +26,7 @@
   <project path="external/themelib" name="external_themelib" remote="afx" />
   <project path="external/colorkt" name="external_colorkt" remote="afx" />
   <project path="external/piex" name="external_piex" remote="droidx" />
+  <project path="external/vixl" name="external_vixl" remote="afx" />
 
   <!-- frameworks  -->
   <project path="frameworks/av" name="frameworks_av" remote="afx" revision="13s" />

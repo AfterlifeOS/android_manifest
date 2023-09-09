@@ -80,7 +80,8 @@
   <!-- External repos -->
   <remove-project name="platform/external/tinycompress" />
   <remove-project name="platform/external/piex" />
-  
+  <remove-project name="platform/external/vixl" />
+
   <!-- Hardware repos -->
   <remove-project name="platform/hardware/qcom/wlan" />
   <remove-project name="platform/hardware/qcom/sdm845/display" />
