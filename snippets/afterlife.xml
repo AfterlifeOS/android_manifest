@@ -88,7 +88,7 @@
   <!-- sepolicy -->
   <project path="device/afterlife/sepolicy" name="device_afterlife_sepolicy"  remote="afx"  />
   <project path="device/qcom/sepolicy_vndr" name="device_qcom_sepolicy_vndr"  remote="afx"  />
-  <project path="device/qcom/sepolicy_vndr-legacy-um" name="device_qcom_sepolicy_vndr" remote="afx" revision="13-legacy-um"  />
+  <project path="device/qcom/sepolicy_vndr-legacy-um" name="device_qcom_sepolicy_vndr" remote="afx" revision="13legacy-um"  />
   <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="afx"  />
   <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="afx" />
 
