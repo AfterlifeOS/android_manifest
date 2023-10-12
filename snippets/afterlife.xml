@@ -60,6 +60,7 @@
   <project path="hardware/libhardware" name="hardware_libhardware" remote="afx" />
   <project path="hardware/qcom-caf/wlan" name="hardware_qcom-caf_wlan" remote="afx" />
   <project path="hardware/motorola" name="hardware_motorola" remote="afx" />
+  <project path="hardware/mediatek" name="hardware_mediatek" remote="afx" />
   <project path="hardware/lineage/livedisplay" name="hardware_lineage_livedisplay" remote="afx" />
 
   <!-- Packages repos -->
@@ -68,6 +69,7 @@
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="afx" revision="13s" />
   <project path="packages/resources/devicesettings" name="packages_resources_devicesettings" remote="afx" />
   <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" remote="afx"/>
+  <project path="packages/modules/Wifi" name="packages_modules_Wifi" remote="afx" />
   <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" remote="afx" revision="13o" />
   <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="afx" />
   <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" remote="afx" />
@@ -89,6 +91,7 @@
   <project path="device/afterlife/sepolicy" name="device_afterlife_sepolicy"  remote="afx"  />
   <project path="device/qcom/sepolicy_vndr" name="device_qcom_sepolicy_vndr"  remote="afx"  />
   <project path="device/qcom/sepolicy_vndr-legacy-um" name="device_qcom_sepolicy_vndr" remote="afx" revision="13legacy-um"  />
+  <project path="device/mediatek/sepolicy_vndr" name="device_mediatek_sepolicy_vndr" remote="afx" />
   <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="afx"  />
   <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="afx" />
 
