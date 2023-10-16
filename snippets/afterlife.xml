@@ -43,7 +43,7 @@
      <linkfile src="core" dest="build/core" />
      <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
      <linkfile src="target" dest="build/target" />
-     <linkfile src="tools" dest="build/tools" />  
+     <linkfile src="tools" dest="build/tools" />
   </project>
   <project path="build/soong" name="build_soong" remote="afx" >
     <linkfile src="root.bp" dest="Android.bp" />
