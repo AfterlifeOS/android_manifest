@@ -1,25 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote  name="github"
-           fetch="https://github.com/" />
-
-  <remote  name="gitlab"
-           fetch="https://gitlab.com/" />
-
-  <remote name="droidx"
-        fetch="https://github.com/DroidX-UI"
-        sync-j="8"
-        revision="13" />
-
-  <remote name="gapps"
-        fetch="https://gitlab.com/OldCrocs"
-        revision="13" />
-
-  <remote name="afx"
-          fetch="https://github.com/AfterLifePrjkt13"
-          revision="13x" />
-
   <!-- external repos -->
   <project path="external/dwarves" name="platform/external/dwarves" remote="aosp" revision="3c8f7e8b2cf7ff902b71c42d00fda30f30114b07" />
   <project path="external/faceunlock" name="external_faceunlock" remote="afx" />
@@ -36,7 +17,7 @@
   <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" remote="afx" revision="13o" />
 
   <!-- General repos -->
-  <project path="build/make" name="build" remote="afx" revision="13s" >
+  <project path="build/make" name="build" remote="afx" revision="13o" >
      <copyfile src="core/root.mk" dest="Makefile" />
      <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
      <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -68,6 +49,7 @@
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="afx" revision="13o" />
   <project path="packages/resources/devicesettings" name="packages_resources_devicesettings" remote="afx" />
   <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" remote="afx"/>
+  <project path="packages/modules/Permission" name="packages_modules_Permission" remote="afx"/>
   <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" remote="afx" revision="13o" />
   <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="afx" />
   <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" remote="afx" />
@@ -78,7 +60,7 @@
   <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" remote="afx" />
   <project path="packages/apps/FMRadio" name="packages_apps_FMRadio" remote="droidx" />
   <project path="packages/apps/TouchGestures" name="packages_apps_TouchGestures" remote="afx" />
-  <project path="packages/overlays/Themes" name="packages_overlays_Themes" remote="afx" />
+  <project path="packages/overlays/Themes" name="packages_overlays_Themes" remote="afx" revision="13o" />
   <project path="packages/apps/Calendar" name="packages_apps_Calendar" remote="afx" />
   <project path="packages/apps/Contacts" name="packages_apps_Contacts" remote="afx" />
   <project path="packages/apps/Dialer" name="packages_apps_Dialer" remote="afx" />
@@ -95,9 +77,10 @@
   <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="afx" />
 
   <!-- System repos -->
-  <project path="system/core" name="system_core" remote="droidx" />
+  <project path="system/core" name="system_core" remote="crocs" />
   <project path="system/sepolicy" name="system_sepolicy" remote="afx" />
   <project path="system/qcom" name="system_qcom" remote="afx" />
+  <project path="system/libhidl" name="android_system_libhidl" remote="lineage" />
 
   <!-- vendor gms -->
   <project path="vendor/gms" name="vendor_gms" remote="gapps" />

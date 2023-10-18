@@ -8,6 +8,31 @@
            remote="aosp"
            sync-j="4" />
 
+  <remote  name="lineage"
+           fetch="https://github.com/LineageOS"
+           revision="lineage-20.0" />
+
+  <remote  name="arrow"
+           fetch="https://github.com/ArrowOS"
+           revision="arrow-13.1" />
+
+  <remote name="droidx"
+        fetch="https://github.com/DroidX-UI"
+        sync-j="8"
+        revision="13" />
+
+  <remote name="gapps"
+        fetch="https://gitlab.com/OldCrocs"
+        revision="13" />
+
+  <remote name="crocs"
+        fetch="https://github.com/Old-Crocs"
+        revision="13" />
+
+  <remote name="afx"
+          fetch="https://github.com/AfterLifePrjkt13"
+          revision="13x" />
+
   <superproject name="platform/superproject" remote="aosp" revision="android-13.0.0_r82"/>
   <contactinfo bugurl="go/repo-bug" />
   <!-- BEGIN open-source projects -->
@@ -1195,6 +1220,7 @@
   
   <!-- AfterLife -->
   <include name="snippets/remove.xml"/>
+  <include name="snippets/other.xml"/>
   <include name="snippets/arrow.xml"/>
   <include name="snippets/lineage.xml"/>
   <include name="snippets/afterlife.xml"/>
