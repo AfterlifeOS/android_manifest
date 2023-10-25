@@ -6,8 +6,11 @@
   <project path="external/faceunlock" name="external_faceunlock" remote="afx" />
   <project path="external/themelib" name="external_themelib" remote="afx" />
   <project path="external/colorkt" name="external_colorkt" remote="afx" />
-  <project path="external/piex" name="external_piex" remote="droidx" />
+  <project path="external/piex" name="external_piex" remote="afx" revision="13o" />
   <project path="external/vixl" name="external_vixl" remote="afx" />
+  <project path="external/gptfdisk" name="external_gptfdisk" remote="afx" revision="13o" />
+  <project path="external/libxml2" name="external_libxml2" remote="afx" revision="13o" />
+  <project path="external/webp" name="external_webp" remote="afx" revision="13o" />
 
   <!-- frameworks  -->
   <project path="frameworks/av" name="frameworks_av" remote="afx" revision="13o" />
@@ -31,7 +34,7 @@
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
   <project path="art" name="art" groups="pdk" remote="afx" />
-  <project path="bionic" name="bionic" groups="pdk" remote="afx" />
+  <project path="bionic" name="bionic" groups="pdk" remote="afx" revision="13o" />
   <project path="bootable/recovery" name="bootable_recovery" remote="afx" />
 
   <!-- hardware -->
@@ -39,6 +42,7 @@
   <project path="hardware/interfaces" name="hardware_interfaces" remote="afx" />
   <project path="hardware/qcom/gps" name="hardware_qcom_gps" remote="afx" />
   <project path="hardware/libhardware" name="hardware_libhardware" remote="afx" />
+  <project path="hardware/libhardware_legacy" name="hardware_libhardware_legacy" remote="afx" revision="13o" />
   <project path="hardware/qcom-caf/wlan" name="hardware_qcom-caf_wlan" remote="afx" />
   <project path="hardware/motorola" name="hardware_motorola" remote="afx" />
   <project path="hardware/lineage/livedisplay" name="hardware_lineage_livedisplay" remote="afx" />
@@ -48,7 +52,7 @@
   <project path="packages/apps/AfterLab" name="packages_apps_AfterLab" remote="afx" revision="13o" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="afx" revision="13o" />
   <project path="packages/resources/devicesettings" name="packages_resources_devicesettings" remote="afx" />
-  <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" remote="afx"/>
+  <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" remote="afx" revision="13o" />
   <project path="packages/modules/Permission" name="packages_modules_Permission" remote="afx"/>
   <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" remote="afx" revision="13o" />
   <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="afx" />
@@ -80,7 +84,10 @@
   <project path="system/core" name="system_core" remote="crocs" />
   <project path="system/sepolicy" name="system_sepolicy" remote="afx" />
   <project path="system/qcom" name="system_qcom" remote="afx" />
-  <project path="system/libhidl" name="android_system_libhidl" remote="lineage" />
+  <project path="system/libhidl" name="android_system_libhidl" remote="afx" revision="13o" />
+
+  <!-- Tools -->
+  <project path="tools/apksig" name="tools_apksig" remote="afx" revision="13o" />
 
   <!-- vendor gms -->
   <project path="vendor/gms" name="vendor_gms" remote="gapps" />
@@ -90,7 +97,6 @@
 
   <!-- vendor support -->
   <project path="vendor/support" name="vendor_support" remote="afx" revision="13.1" />
-
   <project path="vendor/qcom/opensource/fm-commonsys" name="vendor_qcom_opensource_fm-commonsys" remote="afx" />
   <project path="vendor/qcom/opensource/vibrator" name="vendor_qcom_opensource_vibrator" remote="afx" />
   <project path="vendor/qcom/opensource/libfmjni" name="vendor_qcom_opensource_libfmjni" remote="afx" />
