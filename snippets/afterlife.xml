@@ -2,7 +2,7 @@
 <manifest>
 
   <!-- external repos -->
-  <project path="external/dwarves" name="platform/external/dwarves" remote="aosp" revision="3c8f7e8b2cf7ff902b71c42d00fda30f30114b07" />
+  <project path="external/dwarves" name="external/dwarves" remote="afx" revision="13" />
   <project path="external/faceunlock" name="external_faceunlock" remote="afx" />
   <project path="external/themelib" name="external_themelib" remote="afx" />
   <project path="external/colorkt" name="external_colorkt" remote="afx" />
@@ -14,7 +14,7 @@
 
   <!-- frameworks  -->
   <project path="frameworks/av" name="frameworks_av" remote="afx" revision="13o" />
-  <project path="frameworks/base" name="frameworks_base" remote="afx" revision="13o" />
+  <project path="frameworks/base" name="frameworks_base" remote="afx" revision="13" />
   <project path="frameworks/native" name="frameworks_native" remote="afx" revision="13o" />
   <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="afx" revision="13o" />
   <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" remote="afx" revision="13o" />
@@ -50,7 +50,7 @@
   <!-- Packages repos -->
   <project path="packages/apps/Aperture" name="packages_apps_Aperture" remote="afx" />
   <project path="packages/apps/AfterLab" name="packages_apps_AfterLab" remote="afx" revision="13o" />
-  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="afx" revision="13o" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="afx" revision="13" />
   <project path="packages/resources/devicesettings" name="packages_resources_devicesettings" remote="afx" />
   <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" remote="afx" revision="13o" />
   <project path="packages/modules/Permission" name="packages_modules_Permission" remote="afx"/>
@@ -62,8 +62,10 @@
   <project path="packages/apps/FaceUnlockService" name="packages_apps_FaceUnlockService" remote="afx" />
   <project path="packages/apps/ParallelSpace" name="packages_apps_ParallelSpace" remote="afx" />
   <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" remote="afx" />
-  <project path="packages/apps/FMRadio" name="packages_apps_FMRadio" remote="droidx" />
+  <project path="packages/apps/FMRadio" name="packages_apps_FMRadio" remote="afx" revision="13" />
+  <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="afx" revision="13" />
   <project path="packages/apps/TouchGestures" name="packages_apps_TouchGestures" remote="afx" />
+  <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" remote="afx" revision="13" />
   <project path="packages/overlays/Themes" name="packages_overlays_Themes" remote="afx" revision="13o" />
   <project path="packages/apps/Calendar" name="packages_apps_Calendar" remote="afx" />
   <project path="packages/apps/Contacts" name="packages_apps_Contacts" remote="afx" />
