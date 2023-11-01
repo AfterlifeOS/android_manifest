@@ -2,7 +2,7 @@
 <manifest>
 
   <!-- external repos -->
-  <project path="external/dwarves" name="external/dwarves" remote="afx" revision="13" />
+  <project path="external/dwarves" name="external_dwarves" remote="afx" revision="13" />
   <project path="external/faceunlock" name="external_faceunlock" remote="afx" />
   <project path="external/themelib" name="external_themelib" remote="afx" />
   <project path="external/colorkt" name="external_colorkt" remote="afx" />
@@ -27,7 +27,7 @@
      <linkfile src="core" dest="build/core" />
      <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
      <linkfile src="target" dest="build/target" />
-     <linkfile src="tools" dest="build/tools" />  
+     <linkfile src="tools" dest="build/tools" />
   </project>
   <project path="build/soong" name="build_soong" remote="afx" >
     <linkfile src="root.bp" dest="Android.bp" />
