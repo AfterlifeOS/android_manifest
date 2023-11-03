@@ -20,7 +20,7 @@
   <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" remote="afx" revision="13o" />
 
   <!-- General repos -->
-  <project path="build/make" name="build" remote="afx" revision="13o" >
+  <project path="build/make" name="build" remote="afx" revision="13" >
      <copyfile src="core/root.mk" dest="Makefile" />
      <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
      <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -95,7 +95,7 @@
   <project path="vendor/gms" name="vendor_gms" remote="gapps" />
 
   <!-- vendor -->
-  <project path="vendor/afterlife" name="vendor_afterlife" remote="afx" revision="13o" />
+  <project path="vendor/afterlife" name="vendor_afterlife" remote="afx" revision="13" />
 
   <!-- vendor support -->
   <project path="vendor/support" name="vendor_support" remote="afx" revision="13.1" />
