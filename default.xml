@@ -29,9 +29,9 @@
         fetch="https://github.com/Old-Crocs"
         revision="13" />
 
-  <remote name="afx"
+  <remote name="afterlife"
           fetch="https://github.com/AfterLifePrjkt13"
-          revision="13x" />
+          revision="13" />
 
   <superproject name="platform/superproject" remote="aosp" revision="android-13.0.0_r82"/>
   <contactinfo bugurl="go/repo-bug" />

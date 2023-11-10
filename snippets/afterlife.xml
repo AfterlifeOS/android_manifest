@@ -2,25 +2,24 @@
 <manifest>
 
   <!-- external repos -->
-  <project path="external/dwarves" name="external_dwarves" remote="afx" revision="13" />
-  <project path="external/faceunlock" name="external_faceunlock" remote="afx" />
-  <project path="external/themelib" name="external_themelib" remote="afx" />
-  <project path="external/colorkt" name="external_colorkt" remote="afx" />
-  <project path="external/piex" name="external_piex" remote="afx" revision="13o" />
-  <project path="external/vixl" name="external_vixl" remote="afx" />
-  <project path="external/gptfdisk" name="external_gptfdisk" remote="afx" revision="13o" />
-  <project path="external/libxml2" name="external_libxml2" remote="afx" revision="13o" />
-  <project path="external/webp" name="external_webp" remote="afx" revision="13o" />
+  <project path="external/dwarves" name="external_dwarves" remote="afterlife" />
+  <project path="external/faceunlock" name="external_faceunlock" remote="afterlife" />
+  <project path="external/themelib" name="external_themelib" remote="afterlife" />
+  <project path="external/colorkt" name="external_colorkt" remote="afterlife" />
+  <project path="external/piex" name="external_piex" remote="afterlife" />
+  <project path="external/gptfdisk" name="external_gptfdisk" remote="afterlife" />
+  <project path="external/libxml2" name="external_libxml2" remote="afterlife" />
+  <project path="external/webp" name="external_webp" remote="afterlife" />
 
   <!-- frameworks  -->
-  <project path="frameworks/av" name="frameworks_av" remote="afx" revision="13o" />
-  <project path="frameworks/base" name="frameworks_base" remote="afx" revision="13" />
-  <project path="frameworks/native" name="frameworks_native" remote="afx" revision="13o" />
-  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="afx" revision="13o" />
-  <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" remote="afx" revision="13o" />
+  <project path="frameworks/av" name="frameworks_av" remote="afterlife" />
+  <project path="frameworks/base" name="frameworks_base" remote="afterlife" revision="staging/13r11" />
+  <project path="frameworks/native" name="frameworks_native" remote="afterlife" />
+  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="afterlife" />
+  <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" remote="afterlife" />
 
   <!-- General repos -->
-  <project path="build/make" name="build" remote="afx" revision="13" >
+  <project path="build/make" name="build" remote="afterlife" revision="13r11" >
      <copyfile src="core/root.mk" dest="Makefile" />
      <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
      <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -29,81 +28,83 @@
      <linkfile src="target" dest="build/target" />
      <linkfile src="tools" dest="build/tools" />
   </project>
-  <project path="build/soong" name="build_soong" remote="afx" >
+  <project path="build/soong" name="build_soong" remote="afterlife" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
-  <project path="art" name="art" groups="pdk" remote="afx" />
-  <project path="bionic" name="bionic" groups="pdk" remote="afx" revision="13o" />
-  <project path="bootable/recovery" name="bootable_recovery" remote="afx" />
+  <project path="art" name="art" groups="pdk" remote="afterlife" />
+  <project path="bionic" name="bionic" groups="pdk" remote="afterlife" />
+  <project path="bootable/recovery" name="bootable_recovery" remote="afterlife" />
 
   <!-- hardware -->
-  <project path="hardware/afterlife/interfaces" name="hardware_afterlife_interfaces" remote="afx"  />
-  <project path="hardware/interfaces" name="hardware_interfaces" remote="afx" />
-  <project path="hardware/qcom/gps" name="hardware_qcom_gps" remote="afx" />
-  <project path="hardware/libhardware" name="hardware_libhardware" remote="afx" />
-  <project path="hardware/libhardware_legacy" name="hardware_libhardware_legacy" remote="afx" revision="13o" />
-  <project path="hardware/qcom-caf/wlan" name="hardware_qcom-caf_wlan" remote="afx" />
-  <project path="hardware/motorola" name="hardware_motorola" remote="afx" />
-  <project path="hardware/lineage/livedisplay" name="hardware_lineage_livedisplay" remote="afx" />
+  <project path="hardware/afterlife/interfaces" name="hardware_afterlife_interfaces" remote="afterlife"  />
+  <project path="hardware/interfaces" name="hardware_interfaces" remote="afterlife" />
+  <project path="hardware/qcom/gps" name="hardware_qcom_gps" remote="afterlife" />
+  <project path="hardware/libhardware" name="hardware_libhardware" remote="afterlife" />
+  <project path="hardware/libhardware_legacy" name="hardware_libhardware_legacy" remote="afterlife" />
+  <project path="hardware/qcom-caf/wlan" name="hardware_qcom-caf_wlan" remote="afterlife" />
+  <project path="hardware/motorola" name="hardware_motorola" remote="afterlife" />
+  <project path="hardware/lineage/livedisplay" name="hardware_lineage_livedisplay" remote="afterlife" />
 
   <!-- Packages repos -->
-  <project path="packages/apps/Aperture" name="packages_apps_Aperture" remote="afx" />
-  <project path="packages/apps/AfterLab" name="packages_apps_AfterLab" remote="afx" revision="13o" />
-  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="afx" revision="13" />
-  <project path="packages/resources/devicesettings" name="packages_resources_devicesettings" remote="afx" />
-  <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" remote="afx" revision="13o" />
-  <project path="packages/modules/Permission" name="packages_modules_Permission" remote="afx"/>
-  <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" remote="afx" revision="13o" />
-  <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="afx" />
-  <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" remote="afx" />
-  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="afx" revision="13o" />
-  <project path="packages/apps/WallpaperPicker2" name="packages_apps_WallpaperPicker2" remote="afx" />
-  <project path="packages/apps/FaceUnlockService" name="packages_apps_FaceUnlockService" remote="afx" />
-  <project path="packages/apps/ParallelSpace" name="packages_apps_ParallelSpace" remote="afx" />
-  <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" remote="afx" />
-  <project path="packages/apps/FMRadio" name="packages_apps_FMRadio" remote="afx" revision="13" />
-  <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="afx" revision="13" />
-  <project path="packages/apps/TouchGestures" name="packages_apps_TouchGestures" remote="afx" />
-  <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" remote="afx" revision="13" />
-  <project path="packages/overlays/Themes" name="packages_overlays_Themes" remote="afx" revision="13o" />
-  <project path="packages/apps/Calendar" name="packages_apps_Calendar" remote="afx" />
-  <project path="packages/apps/Contacts" name="packages_apps_Contacts" remote="afx" />
-  <project path="packages/apps/Dialer" name="packages_apps_Dialer" remote="afx" />
-  <project path="packages/apps/ExactCalculator" name="packages_apps_ExactCalculator" remote="afx" />
-  <project path="packages/apps/Messaging" name="packages_apps_Messaging" remote="afx" />
-  <project path="packages/services/OmniJaws" name="packages_services_OmniJaws" remote="afx" revision="13o" />
-  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="afx" revision="13o" />
+  <project path="packages/apps/Aperture" name="packages_apps_Aperture" remote="afterlife" />
+  <project path="packages/apps/AfterLab" name="packages_apps_AfterLab" remote="afterlife" revision="tmp" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="afterlife" />
+  <project path="packages/resources/devicesettings" name="packages_resources_devicesettings" remote="afterlife" />
+  <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" remote="afterlife" />
+  <project path="packages/modules/Permission" name="packages_modules_Permission" remote="afterlife"/>
+  <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" remote="afterlife" />
+  <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="afterlife" />
+  <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" remote="afterlife" />
+  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="afterlife" />
+  <project path="packages/apps/NeverLandStub" name="packages_apps_NeverLandStub" remote="afterlife" />
+  <project path="packages/apps/WallpaperPicker2" name="packages_apps_WallpaperPicker2" remote="afterlife" />
+  <project path="packages/apps/FaceUnlockService" name="packages_apps_FaceUnlockService" remote="afterlife" />
+  <project path="packages/apps/ParallelSpace" name="packages_apps_ParallelSpace" remote="afterlife" />
+  <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" remote="afterlife" />
+  <project path="packages/apps/FMRadio" name="packages_apps_FMRadio" remote="afterlife" />
+  <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="afterlife" />
+  <project path="packages/apps/TouchGestures" name="packages_apps_TouchGestures" remote="afterlife" />
+  <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" remote="afterlife" />
+  <project path="packages/overlays/Themes" name="packages_overlays_Themes" remote="afterlife" />
+  <project path="packages/apps/Calendar" name="packages_apps_Calendar" remote="afterlife" />
+  <project path="packages/apps/Contacts" name="packages_apps_Contacts" remote="afterlife" />
+  <project path="packages/apps/Dialer" name="packages_apps_Dialer" remote="afterlife" />
+  <project path="packages/apps/ExactCalculator" name="packages_apps_ExactCalculator" remote="afterlife" />
+  <project path="packages/apps/Messaging" name="packages_apps_Messaging" remote="afterlife" />
+  <project path="packages/services/OmniJaws" name="packages_services_OmniJaws" remote="afterlife" />
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="afterlife" />
+  <project path="packages/services/Telephony" name="packages_services_Telephony" remote="afterlife" />
 
   <!-- sepolicy -->
-  <project path="device/afterlife/sepolicy" name="device_afterlife_sepolicy"  remote="afx"  />
-  <project path="device/qcom/sepolicy_vndr" name="device_qcom_sepolicy_vndr"  remote="afx"  />
-  <project path="device/qcom/sepolicy_vndr-legacy-um" name="device_qcom_sepolicy_vndr" remote="afx" revision="13olegacy-um"  />
-  <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="afx"  />
-  <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="afx" />
+  <project path="device/afterlife/sepolicy" name="device_afterlife_sepolicy"  remote="afterlife"  />
+  <project path="device/qcom/sepolicy_vndr" name="device_qcom_sepolicy_vndr"  remote="afterlife"  />
+  <project path="device/qcom/sepolicy_vndr-legacy-um" name="device_qcom_sepolicy_vndr" remote="afterlife" revision="13legacy-um"  />
+  <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="afterlife"  />
+  <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="afterlife" />
 
   <!-- System repos -->
   <project path="system/core" name="system_core" remote="crocs" />
-  <project path="system/sepolicy" name="system_sepolicy" remote="afx" />
-  <project path="system/qcom" name="system_qcom" remote="afx" />
-  <project path="system/libhidl" name="android_system_libhidl" remote="afx" revision="13o" />
+  <project path="system/sepolicy" name="system_sepolicy" remote="afterlife" />
+  <project path="system/qcom" name="system_qcom" remote="afterlife" />
+  <project path="system/libhidl" name="android_system_libhidl" remote="afterlife" />
 
   <!-- Tools -->
-  <project path="tools/apksig" name="tools_apksig" remote="afx" revision="13o" />
+  <project path="tools/apksig" name="tools_apksig" remote="afterlife" />
 
   <!-- vendor gms -->
   <project path="vendor/gms" name="vendor_gms" remote="gapps" />
 
   <!-- vendor -->
-  <project path="vendor/afterlife" name="vendor_afterlife" remote="afx" revision="13" />
+  <project path="vendor/afterlife" name="vendor_afterlife" remote="afterlife" revision="13r11" />
 
   <!-- vendor support -->
-  <project path="vendor/support" name="vendor_support" remote="afx" revision="13.1" />
-  <project path="vendor/qcom/opensource/fm-commonsys" name="vendor_qcom_opensource_fm-commonsys" remote="afx" />
-  <project path="vendor/qcom/opensource/vibrator" name="vendor_qcom_opensource_vibrator" remote="afx" />
-  <project path="vendor/qcom/opensource/libfmjni" name="vendor_qcom_opensource_libfmjni" remote="afx" />
+  <project path="vendor/support" name="vendor_support" remote="afterlife" />
+  <project path="vendor/qcom/opensource/fm-commonsys" name="vendor_qcom_opensource_fm-commonsys" remote="afterlife" />
+  <project path="vendor/qcom/opensource/vibrator" name="vendor_qcom_opensource_vibrator" remote="afterlife" />
+  <project path="vendor/qcom/opensource/libfmjni" name="vendor_qcom_opensource_libfmjni" remote="afterlife" />
 
   <!-- manifest -->
-  <project path="manifest" name="android_manifest" remote="afx"  />
+  <project path="manifest" name="android_manifest" remote="afterlife"  />
 
 </manifest>
