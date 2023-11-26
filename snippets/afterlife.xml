@@ -13,13 +13,13 @@
 
   <!-- frameworks  -->
   <project path="frameworks/av" name="frameworks_av" remote="afterlife" />
-  <project path="frameworks/base" name="frameworks_base" remote="afterlife" revision="staging/13r11" />
+  <project path="frameworks/base" name="frameworks_base" remote="afterlife" />
   <project path="frameworks/native" name="frameworks_native" remote="afterlife" />
   <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="afterlife" />
   <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" remote="afterlife" />
 
   <!-- General repos -->
-  <project path="build/make" name="build" remote="afterlife" revision="13r11" >
+  <project path="build/make" name="build" remote="afterlife" >
      <copyfile src="core/root.mk" dest="Makefile" />
      <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
      <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -44,16 +44,18 @@
   <project path="hardware/libhardware_legacy" name="hardware_libhardware_legacy" remote="afterlife" />
   <project path="hardware/qcom-caf/wlan" name="hardware_qcom-caf_wlan" remote="afterlife" />
   <project path="hardware/motorola" name="hardware_motorola" remote="afterlife" />
+  <project path="hardware/mediatek" name="hardware_mediatek" remote="afterlife" />
   <project path="hardware/lineage/livedisplay" name="hardware_lineage_livedisplay" remote="afterlife" />
 
   <!-- Packages repos -->
   <project path="packages/apps/Aperture" name="packages_apps_Aperture" remote="afterlife" />
-  <project path="packages/apps/AfterLab" name="packages_apps_AfterLab" remote="afterlife" revision="tmp" />
+  <project path="packages/apps/AfterLab" name="packages_apps_AfterLab" remote="afterlife" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="afterlife" />
   <project path="packages/resources/devicesettings" name="packages_resources_devicesettings" remote="afterlife" />
   <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" remote="afterlife" />
   <project path="packages/modules/Permission" name="packages_modules_Permission" remote="afterlife"/>
   <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" remote="afterlife" />
+  <project path="packages/modules/Wifi" name="packages_modules_Wifi" remote="afterlife" />
   <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="afterlife" />
   <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" remote="afterlife" />
   <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="afterlife" />
@@ -78,6 +80,7 @@
 
   <!-- sepolicy -->
   <project path="device/afterlife/sepolicy" name="device_afterlife_sepolicy"  remote="afterlife"  />
+  <project path="device/mediatek/sepolicy_vndr" name="device_mediatek_sepolicy_vndr" remote="afterlife" />
   <project path="device/qcom/sepolicy_vndr" name="device_qcom_sepolicy_vndr"  remote="afterlife"  />
   <project path="device/qcom/sepolicy_vndr-legacy-um" name="device_qcom_sepolicy_vndr" remote="afterlife" revision="13legacy-um"  />
   <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="afterlife"  />
@@ -96,7 +99,7 @@
   <project path="vendor/gms" name="vendor_gms" remote="gapps" />
 
   <!-- vendor -->
-  <project path="vendor/afterlife" name="vendor_afterlife" remote="afterlife" revision="13r11" />
+  <project path="vendor/afterlife" name="vendor_afterlife" remote="afterlife" />
 
   <!-- vendor support -->
   <project path="vendor/support" name="vendor_support" remote="afterlife" />
