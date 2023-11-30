@@ -55,6 +55,8 @@
   <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" remote="afterlife" />
   <project path="packages/modules/Permission" name="packages_modules_Permission" remote="afterlife"/>
   <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" remote="afterlife" />
+  <project path="packages/modules/DnsResolver" name="packages_modules_DnsResolver" remote="afterlife" />
+  <project path="packages/modules/StatsD" name="packages_modules_StatsD" remote="afterlife" />
   <project path="packages/modules/Wifi" name="packages_modules_Wifi" remote="afterlife" />
   <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="afterlife" />
   <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" remote="afterlife" />
@@ -67,6 +69,7 @@
   <project path="packages/apps/FMRadio" name="packages_apps_FMRadio" remote="afterlife" />
   <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="afterlife" />
   <project path="packages/apps/TouchGestures" name="packages_apps_TouchGestures" remote="afterlife" />
+  <project path="packages/apps/KeyChain" name="packages_apps_KeyChain" remote="afterlife" />
   <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" remote="afterlife" />
   <project path="packages/overlays/Themes" name="packages_overlays_Themes" remote="afterlife" />
   <project path="packages/apps/Calendar" name="packages_apps_Calendar" remote="afterlife" />
@@ -91,6 +94,8 @@
   <project path="system/sepolicy" name="system_sepolicy" remote="afterlife" />
   <project path="system/qcom" name="system_qcom" remote="afterlife" />
   <project path="system/libhidl" name="android_system_libhidl" remote="afterlife" />
+  <project path="system/ca-certificates" name="system_ca-certificates" remote="afterlife" />
+  <project path="system/vold" name="system_vold" remote="afterlife" />
 
   <!-- Tools -->
   <project path="tools/apksig" name="tools_apksig" remote="afterlife" />
