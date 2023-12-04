@@ -82,12 +82,12 @@
   <project path="packages/services/Telephony" name="packages_services_Telephony" remote="afterlife" />
 
   <!-- sepolicy -->
-  <project path="device/afterlife/sepolicy" name="device_afterlife_sepolicy"  remote="afterlife"  />
-  <project path="device/mediatek/sepolicy_vndr" name="device_mediatek_sepolicy_vndr" remote="afterlife" />
-  <project path="device/qcom/sepolicy_vndr" name="device_qcom_sepolicy_vndr"  remote="afterlife"  />
+  <project path="device/afterlife/sepolicy" name="device_afterlife_sepolicy"  remote="afterlife" revision="13" />
+  <project path="device/mediatek/sepolicy_vndr" name="device_mediatek_sepolicy_vndr" remote="afterlife" revision="13" />
+  <project path="device/qcom/sepolicy_vndr" name="device_qcom_sepolicy_vndr"  remote="afterlife"  revision="13" />
   <project path="device/qcom/sepolicy_vndr-legacy-um" name="device_qcom_sepolicy_vndr" remote="afterlife" revision="13legacy-um"  />
-  <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="afterlife"  />
-  <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="afterlife" />
+  <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="afterlife"  revision="13" />
+  <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="afterlife" revision="13" />
 
   <!-- System repos -->
   <project path="system/core" name="system_core" remote="crocs" />
@@ -105,14 +105,12 @@
 
   <!-- vendor -->
   <project path="vendor/afterlife" name="vendor_afterlife" remote="afterlife" />
+  <project path="vendor/signed" name="vendor_signed" remote="afterlife" revision="13" />
 
   <!-- vendor support -->
-  <project path="vendor/support" name="vendor_support" remote="afterlife" />
-  <project path="vendor/qcom/opensource/fm-commonsys" name="vendor_qcom_opensource_fm-commonsys" remote="afterlife" />
-  <project path="vendor/qcom/opensource/vibrator" name="vendor_qcom_opensource_vibrator" remote="afterlife" />
-  <project path="vendor/qcom/opensource/libfmjni" name="vendor_qcom_opensource_libfmjni" remote="afterlife" />
-
-  <!-- manifest -->
-  <project path="manifest" name="android_manifest" remote="afterlife"  />
+  <project path="vendor/support" name="vendor_support" remote="afterlife" revision="13" />
+  <project path="vendor/qcom/opensource/fm-commonsys" name="vendor_qcom_opensource_fm-commonsys" remote="afterlife" revision="13" />
+  <project path="vendor/qcom/opensource/vibrator" name="vendor_qcom_opensource_vibrator" remote="afterlife" revision="13" />
+  <project path="vendor/qcom/opensource/libfmjni" name="vendor_qcom_opensource_libfmjni" remote="afterlife" revision="13" />
 
 </manifest>
