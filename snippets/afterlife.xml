@@ -2,13 +2,14 @@
 <manifest>
 
   <!-- external repos -->
+  <project path="external/colorkt" name="external_colorkt" remote="afterlife" />
   <project path="external/dwarves" name="external_dwarves" remote="afterlife" />
   <project path="external/faceunlock" name="external_faceunlock" remote="afterlife" />
-  <project path="external/themelib" name="external_themelib" remote="afterlife" />
-  <project path="external/colorkt" name="external_colorkt" remote="afterlife" />
-  <project path="external/piex" name="external_piex" remote="afterlife" />
   <project path="external/gptfdisk" name="external_gptfdisk" remote="afterlife" />
   <project path="external/libxml2" name="external_libxml2" remote="afterlife" />
+  <project path="external/pdfium" name="external_pdfium" groups="pdk" remote="afterlife"/>
+  <project path="external/piex" name="external_piex" remote="afterlife" />
+  <project path="external/themelib" name="external_themelib" remote="afterlife" />
   <project path="external/webp" name="external_webp" remote="afterlife" />
 
   <!-- frameworks  -->
@@ -35,7 +36,7 @@
   <project path="art" name="art" groups="pdk" remote="afterlife" />
   <project path="bionic" name="bionic" groups="pdk" remote="afterlife" />
   <project path="bootable/recovery" name="bootable_recovery" remote="afterlife" />
-
+  <project path="cts" name="cts" groups="cts,pdk-cw-fs,pdk-fs" remote="afterlife" />
   <!-- hardware -->
   <project path="hardware/afterlife/interfaces" name="hardware_afterlife_interfaces" remote="afterlife"  />
   <project path="hardware/interfaces" name="hardware_interfaces" remote="afterlife" />
@@ -90,11 +91,12 @@
   <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="afterlife" revision="13" />
 
   <!-- System repos -->
-  <project path="system/core" name="system_core" remote="crocs" />
-  <project path="system/sepolicy" name="system_sepolicy" remote="afterlife" />
-  <project path="system/qcom" name="system_qcom" remote="afterlife" />
-  <project path="system/libhidl" name="android_system_libhidl" remote="afterlife" />
   <project path="system/ca-certificates" name="system_ca-certificates" remote="afterlife" />
+  <project path="system/core" name="system_core" remote="crocs" />
+  <project path="system/libhidl" name="android_system_libhidl" remote="afterlife" />
+  <project path="system/netd" name="system_netd" groups="pdk" remote="afterlife" />
+  <project path="system/qcom" name="system_qcom" remote="afterlife" />
+  <project path="system/sepolicy" name="system_sepolicy" remote="afterlife" />
   <project path="system/vold" name="system_vold" remote="afterlife" />
 
   <!-- Tools -->
