@@ -1204,6 +1204,7 @@
     <!-- additional -->
     <include name="snippets/remove.xml" />
     <include name="snippets/afterlife.xml" />
+    <include name="snippets/arrow.xml" />
 
     <!-- END open-source projects -->
 </manifest>
