@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
     <!-- devices -->
-    <project path="device/afterlife/sepolicy" name="device_afterlife_sepolicy" revision="13" />
-    <project path="device/mediatek/sepolicy_vndr" name="device_mediatek_sepolicy_vndr" revision="13" />
-    <project path="device/qcom/sepolicy_vndr" name="device_qcom_sepolicy_vndr" revision="13" />
-    <project path="device/qcom/sepolicy_vndr-legacy-um" name="device_qcom_sepolicy_vndr" revision="13legacy-um"  />
-    <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" revision="13" />
-    <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" revision="13" />
+    <project path="device/afterlife/sepolicy" name="AfterLifePrjkt13/device_afterlife_sepolicy" revision="13" />
+    <project path="device/mediatek/sepolicy_vndr" name="AfterLifePrjkt13/device_mediatek_sepolicy_vndr" revision="13" />
+    <project path="device/qcom/sepolicy_vndr" name="AfterLifePrjkt13/device_qcom_sepolicy_vndr" revision="13" />
+    <project path="device/qcom/sepolicy_vndr-legacy-um" name="AfterLifePrjkt13/device_qcom_sepolicy_vndr" revision="13legacy-um"  />
+    <project path="device/qcom/sepolicy-legacy-um" name="AfterLifePrjkt13/device_qcom_sepolicy-legacy-um" revision="13" />
+    <project path="device/qcom/sepolicy" name="AfterLifePrjkt13/device_qcom_sepolicy" revision="13" />
 
     <!-- external -->
     <project path="external/colorkt" name="AfterLifePrjkt13/external_colorkt" />

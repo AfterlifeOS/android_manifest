@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-    <!-- device repos -->
+    <!-- externals -->
+    <remove-project name="platform/external/mksh" />
+
+    <!-- devices -->
     <remove-project name="device/amlogic/yukawa" />
     <remove-project name="device/amlogic/yukawa-kernel" />
     <remove-project name="device/common" />
@@ -72,6 +75,7 @@
 
     <!-- hardwares -->
     <remove-project name="platform/hardware/qcom/sdm845/display" />
+    <remove-project name="platform/hardware/qcom/wlan" />
 
     <!-- system -->
     <remove-project name="platform/external/tinycompress" />

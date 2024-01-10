@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <!-- hardware -->
+    <project path="hardware/lineage/compat" name="LineageOS/android_hardware_lineage_compat" revision="lineage-20" />
+    <project path="hardware/xiaomi" name="LineageOS/android_hardware_xiaomi" revision="lineage-20.0" />
+
+    <!-- externals -->
+    <project path="external/tinycompress" name="LineageOS/android_external_tinycompress" revision="lineage-20.0" />
+
+    <!-- prebuilts -->
+    <project path="prebuilts/extract-tools" name="LineageOS/android_prebuilts_extract-tools" revision="lineage-20.0" />
+    <project path="prebuilts/tools-lineage" name="LineageOS/android_prebuilts_tools-lineage" clone-depth="1"  />
+    <project path="prebuilts/kernel-build-tools" name="LineageOS/kernel/prebuilts/build-tools" clone-depth="1" remote="aosp" revision="refs/tags/android-13.0.0_r0.60" />
+
+    <!-- tools -->
+    <project path="tools/extract-utils" name="LineageOS/android_tools_extract-utils" revision="lineage-20.0" />
+
+    <!-- vendors -->
+    <project path="vendor/qcom/opensource/audio-hal/st-hal" name="LineageOS/android_vendor_qcom_opensource_audio-hal_st-hal" groups="qcom,lahaina" revision="lineage-20.0" />
+    <project path="vendor/qcom/opensource/audio-hal/st-hal-ar" name="LineageOS/android_vendor_qcom_opensource_audio-hal_st-hal-ar" groups="qcom,waipio-vendor" revision="lineage-20.0" />
+    <project path="vendor/qcom/opensource/commonsys/display" name="LineageOS/android_vendor_qcom_opensource_display-commonsys" groups="qcom,qssi" revision="lineage-20.0" />
+    <project path="vendor/qcom/opensource/commonsys-intf/display" name="LineageOS/android_vendor_qcom_opensource_display-commonsys-intf" groups="qcom,qssi" revision="lineage-20.0" />
+    <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="LineageOS/android_vendor_qcom_opensource_data-ipa-cfg-mgr" groups="qcom,waipio-vendor" revision="lineage-20.0" />
+    <project path="vendor/qcom/opensource/data-ipa-cfg-mgr-legacy-um" name="LineageOS/android_vendor_qcom_opensource_data-ipa-cfg-mgr" groups="qcom,lahaina" revision="lineage-20.0-legacy-um" />
+    <project path="vendor/qcom/opensource/display" name="LineageOS/android_vendor_qcom_opensource_display" groups="qcom" revision="lineage-20.0" />
+    <project path="vendor/qcom/opensource/interfaces" name="LineageOS/android_vendor_qcom_opensource_interfaces" groups="qcom,qssi" revision="lineage-20.0" />
+    <project path="vendor/qcom/opensource/usb" name="LineageOS/android_vendor_qcom_opensource_usb" groups="qcom,waipio-vendor" revision="lineage-20.0" />
+</manifest>

@@ -11,7 +11,7 @@
     <remote name="gitlab"
             fetch="https://gitlab.com" />
 
-    <default revision="refs/heads/13"
+    <default revision="refs/tags/5.0"
              remote="github"
              sync-j="4" />
 
@@ -31,9 +31,9 @@
         <linkfile src="bazel.sh" dest="tools/bazel" />
         <linkfile src="bazel.BUILD" dest="BUILD" />
     </project>
-    <project path="build/bazel_common_rules" name="platform/build/bazel_common_rules" groups="pdk" remote="aosp" remote="aosp" />
-    <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" remote="aosp" remote="aosp" />
-    <project path="build/pesto" name="platform/build/pesto" groups="pdk" remote="aosp" remote="aosp" />
+    <project path="build/bazel_common_rules" name="platform/build/bazel_common_rules" groups="pdk" remote="aosp" />
+    <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" remote="aosp" />
+    <project path="build/pesto" name="platform/build/pesto" groups="pdk" remote="aosp" />
     <project path="build/soong" name="AfterLifePrjkt13/build_soong" groups="pdk,tradefed">
         <linkfile src="root.bp" dest="Android.bp" />
         <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
