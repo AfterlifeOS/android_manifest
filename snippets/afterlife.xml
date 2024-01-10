@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <!-- devices -->
+    <project path="device/afterlife/sepolicy" name="device_afterlife_sepolicy" revision="13" />
+    <project path="device/mediatek/sepolicy_vndr" name="device_mediatek_sepolicy_vndr" revision="13" />
+    <project path="device/qcom/sepolicy_vndr" name="device_qcom_sepolicy_vndr" revision="13" />
+    <project path="device/qcom/sepolicy_vndr-legacy-um" name="device_qcom_sepolicy_vndr" revision="13legacy-um"  />
+    <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" revision="13" />
+    <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" revision="13" />
+
+    <!-- external -->
+    <project path="external/colorkt" name="AfterLifePrjkt13/external_colorkt" />
+    <project path="external/dwarves" name="AfterLifePrjkt13/external_dwarves" />
+    <project path="external/faceunlock" name="AfterLifePrjkt13/external_faceunlock" />
+    <project path="external/themelib" name="AfterLifePrjkt13/external_themelib" />
+
+    <!-- hardware -->
+    <project path="hardware/afterlife/interfaces" name="AfterLifePrjkt13/hardware_afterlife_interfaces" />
+    <project path="hardware/lineage/livedisplay" name="AfterLifePrjkt13/hardware_lineage_livedisplay" />
+    <project path="hardware/mediatek" name="AfterLifePrjkt13/hardware_mediatek" />
+    <project path="hardware/motorola" name="AfterLifePrjkt13/hardware_motorola" />
+    <project path="hardware/qcom-caf/wlan" name="AfterLifePrjkt13/hardware_qcom-caf_wlan" />
+
+    <!-- packages -->
+    <project path="packages/apps/Aperture" name="AfterLifePrjkt13/packages_apps_Aperture" />
+    <project path="packages/apps/AfterLab" name="AfterLifePrjkt13/packages_apps_AfterLab" />
+    <project path="packages/apps/ExactCalculator" name="AfterLifePrjkt13/packages_apps_ExactCalculator" />
+    <project path="packages/apps/FaceUnlockService" name="AfterLifePrjkt13/packages_apps_FaceUnlockService" />
+    <project path="packages/apps/FMRadio" name="AfterLifePrjkt13/packages_apps_FMRadio" />
+    <project path="packages/apps/GameSpace" name="AfterLifePrjkt13/packages_apps_GameSpace" />
+    <project path="packages/apps/NeverLandStub" name="AfterLifePrjkt13/packages_apps_NeverLandStub" />
+    <project path="packages/apps/ParallelSpace" name="AfterLifePrjkt13/packages_apps_ParallelSpace" />
+    <project path="packages/apps/TouchGestures" name="AfterLifePrjkt13/packages_apps_TouchGestures" />
+    <project path="packages/overlays/Themes" name="AfterLifePrjkt13/packages_overlays_Themes" />
+    <project path="packages/resources/devicesettings" name="AfterLifePrjkt13/packages_resources_devicesettings" />
+    <project path="packages/services/OmniJaws" name="AfterLifePrjkt13/packages_services_OmniJaws" />
+
+    <!-- systems -->
+    <project path="system/qcom" name="AfterLifePrjkt13/system_qcom" />
+
+    <!-- vendors -->
+    <project path="vendor/afterlife" name="AfterLifePrjkt13/vendor_afterlife" />
+    <project path="vendor/gms" name="OldCrocs/vendor_gms" remote="gitlab" />
+    <project path="vendor/qcom/opensource/fm-commonsys" name="AfterLifePrjkt13/vendor_qcom_opensource_fm-commonsys" revision="13" />
+    <project path="vendor/qcom/opensource/libfmjni" name="AfterLifePrjkt13/vendor_qcom_opensource_libfmjni" revision="13" />
+    <project path="vendor/qcom/opensource/vibrator" name="AfterLifePrjkt13/vendor_qcom_opensource_vibrator" revision="13" />
+    <project path="vendor/signed" name="AfterLifePrjkt13/vendor_signed" revision="13" />
+    <project path="vendor/support" name="AfterLifePrjkt13/vendor_support" revision="13" />
+</manifest>
