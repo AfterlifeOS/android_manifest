@@ -1205,6 +1205,8 @@
     <include name="snippets/remove.xml" />
     <include name="snippets/afterlife.xml" />
     <include name="snippets/arrow.xml" />
+    <include name="snippets/lineage.xml" />
+    <include name="snippets/hals.xml" />
 
     <!-- END open-source projects -->
 </manifest>
