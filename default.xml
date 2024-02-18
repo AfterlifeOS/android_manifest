@@ -27,7 +27,7 @@
 
   <remote name="afterlife"
           fetch="https://github.com/AfterLifePrjkt13"
-          revision="refs/tags/5.0" />
+          revision="13" />
 
   <superproject name="platform/superproject" remote="aosp" revision="android-13.0.0_r82"/>
   <contactinfo bugurl="go/repo-bug" />
