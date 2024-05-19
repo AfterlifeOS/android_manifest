@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- AfterLife additions -->
+  <project path="device/afterlife/ota" name="AfterlifeOS/device_afterlife_ota" />
+  <project path="device/afterlife/sepolicy" name="AfterlifeOS/device_afterlife_sepolicy" />
+  <project path="external/calyx/datura" name="AfterlifeOS/external_calyx_datura" remote="gitea" />
+  <project path="hardware/afterlife/interfaces" name="AfterlifeOS/hardware_afterlife_interfaces" />
+  <project path="hardware/xiaomi" name="AfterlifeOS/hardware_xiaomi" revision="14" />
+  <project path="manifest" name="AfterlifeOS/android_manifest" />
+  <project path="packages/apps/AfterLab" name="AfterlifeOS/packages_apps_AfterLab" />
+  <project path="packages/apps/GameSpace" name="AfterlifeOS/packages_apps_GameSpace" />
+  <project path="packages/apps/ParanoidSense" name="AfterlifeOS/packages_apps_ParanoidSense" />
+  <project path="packages/apps/Updater" name="AfterlifeOS/packages_apps_Updater" remote="gitea" />
+  <project path="packages/overlays/Themes" name="AfterlifeOS/packages_overlays_Themes" />
+  <project path="prebuilts/calyx/datura" name="AfterlifeOS/prebuilts_calyx_datura" remote="gitea" />
+  <project path="prebuilts/exthm-sdk" name="AfterlifeOS/prebuilts_exthmui-sdk" remote="gitea" />
+  <project path="vendor/afterlife" name="AfterlifeOS/vendor_afterlife" />
+  <project path="vendor/afterlife/signed" name="AfterlifeOS/vendor_signed" />
+  <project path="vendor/afterlife-ui" name="AfterlifeOS/vendor_AfterUI" />
+  <project path="vendor/gms" name="AfterlifeOS/vendor_gms" remote="gitea" clone-depth="1" />
+  <project path="vendor/support" name="AfterlifeOS/vendor_support" />
+
+  <!-- CodeLinaro additions -->
+  <project path="device/qcom/sepolicy" name="AfterlifeOS/device_qcom_sepolicy" groups="qcom,qssi" />
+  <project path="device/qcom/sepolicy-legacy-um" name="AfterlifeOS/device_qcom_sepolicy" groups="qcom,sdm660" revision="14-legacy-um" />
+  <project path="device/qcom/sepolicy_vndr/legacy-um" name="AfterlifeOS/device_qcom_sepolicy_vndr" groups="qcom,lahaina" revision="14-legacy-um" />
+  <project path="device/qcom/sepolicy_vndr/sm8450" name="AfterlifeOS/device_qcom_sepolicy_vndr" groups="qcom,waipio-vendor" revision="14-caf-sm8450" />
+  <project path="device/qcom/sepolicy_vndr/sm8550" name="AfterlifeOS/device_qcom_sepolicy_vndr" groups="qcom,kailua-vendor" revision="14-caf-sm8550" />
+  <project path="hardware/qcom-caf/common" name="AfterlifeOS/hardware_qcom-caf_common" groups="qcom">
+    <!-- add guard for AOSP hardware/qcom dir -->
+    <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
+    <!-- add guards for CAF repositories -->
+    <linkfile src="os_pickup_sepolicy_vndr.mk" dest="device/qcom/sepolicy_vndr/SEPolicy.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/msm8953/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8953/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8996/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8996/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8998/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8998/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sdm660/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sdm660/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sdm845/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sdm845/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8150/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8150/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8250/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8250/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8350/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8350/Android.mk" />
+    <linkfile src="os_pickup_audio-ar.mk" dest="hardware/qcom-caf/sm8450/audio/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8450/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8450/Android.mk" />
+    <linkfile src="os_pickup_audio-ar.mk" dest="hardware/qcom-caf/sm8550/audio/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8550/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8550/Android.mk" />
+    <!-- add guards for Pixel kernel modules -->
+    <linkfile src="os_pickup.bp" dest="kernel/google/gs201/private/google-modules/Android.bp" />
+  </project>
+  <project path="hardware/qcom-caf/wlan" name="AfterlifeOS/hardware_qcom_wlan" groups="qcom,kailua-vendor" revision="14-caf" />
+  <project path="vendor/qcom/opensource/vibrator" name="AfterlifeOS/vendor_qcom_opensource_vibrator" groups="qcom,kailua-vendor" />
+</manifest>
