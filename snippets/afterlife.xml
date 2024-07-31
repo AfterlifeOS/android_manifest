@@ -17,7 +17,7 @@
   <project path="vendor/afterlife" name="AfterlifeOS/vendor_afterlife" />
   <project path="vendor/afterlife/signed" name="AfterlifeOS/vendor_signed" />
   <project path="vendor/afterlife-ui" name="AfterlifeOS/vendor_AfterUI" />
-  <project path="vendor/gms" name="AfterlifeOS/vendor_gms" remote="gitea" clone-depth="1" />
+  <project path="vendor/gms" name="AfterlifeOS/vendor_gms" remote="gitea" clone-depth="1" revision="14" />
   <project path="vendor/support" name="AfterlifeOS/vendor_support" />
 
   <!-- CodeLinaro additions -->

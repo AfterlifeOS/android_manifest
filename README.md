@@ -13,7 +13,7 @@ familiar with [Git and Repo](https://source.android.com/setup/build/downloading)
 To initialize your local repository, use command:
 
 ```bash
-repo init --depth=1 -u https://github.com/AfterlifeOS/android_manifest.git -b 14 --git-lfs
+repo init --depth=1 -u https://github.com/AfterlifeOS/android_manifest.git -b refs/tags/V7.0 --git-lfs
 ```
 
 ## Then sync up: ##
