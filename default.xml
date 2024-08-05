@@ -1204,7 +1204,7 @@
   <project path="prebuilts/runtime" name="platform/prebuilts/runtime" groups="pdk" clone-depth="1" remote="aosp" />
   <project path="prebuilts/rust" name="platform/prebuilts/rust" groups="pdk" clone-depth="1" remote="aosp" />
   <project path="prebuilts/r8" name="platform/prebuilts/r8" groups="pdk" clone-depth="1" remote="aosp" />
-  <project path="prebuilts/sdk" name="platform/prebuilts/sdk" groups="pdk,sysui-studio" clone-depth="1" remote="aosp" />
+  <project path="prebuilts/sdk" name="AfterlifeOS/prebuilts_sdk" groups="pdk,sysui-studio" clone-depth="1" remote="gitea" />
   <project path="prebuilts/tools" name="platform/prebuilts/tools" groups="pdk,tools,sysui-studio" clone-depth="1" remote="aosp" />
   <project path="prebuilts/vndk/v29" name="platform/prebuilts/vndk/v29" groups="pdk" clone-depth="1" remote="aosp" />
   <project path="prebuilts/vndk/v30" name="platform/prebuilts/vndk/v30" groups="pdk" clone-depth="1" remote="aosp" />
