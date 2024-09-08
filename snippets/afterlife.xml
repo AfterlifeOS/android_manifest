@@ -3,14 +3,17 @@
   <!-- AfterLife additions -->
   <project path="device/afterlife/ota" name="AfterlifeOS/device_afterlife_ota" />
   <project path="device/afterlife/sepolicy" name="AfterlifeOS/device_afterlife_sepolicy" />
+  <project path="external/FadingEdgeLayout" name="AfterlifeOS/external_FadingEdgeLayout" />
   <project path="hardware/afterlife/interfaces" name="AfterlifeOS/hardware_afterlife_interfaces" />
   <project path="hardware/xiaomi" name="AfterlifeOS/hardware_xiaomi" revision="14" />
   <project path="manifest" name="AfterlifeOS/android_manifest" />
   <project path="packages/apps/AfterLab" name="AfterlifeOS/packages_apps_AfterLab" />
   <project path="packages/apps/GameSpace" name="AfterlifeOS/packages_apps_GameSpace" />
   <project path="packages/apps/ParanoidSense" name="AfterlifeOS/packages_apps_ParanoidSense" />
+  <project path="packages/apps/OmniStyle" name="AfterlifeOS/packages_apps_OmniStyle" />
   <project path="packages/apps/Updater" name="AfterlifeOS/packages_apps_Updater" remote="gitea" />
   <project path="packages/overlays/Themes" name="AfterlifeOS/packages_overlays_Themes" />
+  <project path="packages/services/OmnuJaws" name="AfterlifeOS/packages_services_OmniJaws" />
   <project path="prebuilts/exthm-sdk" name="AfterlifeOS/prebuilts_exthmui-sdk" remote="gitea" />
   <project path="vendor/afterlife" name="AfterlifeOS/vendor_afterlife" />
   <project path="vendor/afterlife/signed" name="AfterlifeOS/vendor_signed" />
