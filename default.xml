@@ -10,12 +10,12 @@
 
   <remote  name="gitea"
            fetch="https://gitea.com"
-           revision="refs/heads/14" />
+           revision="refs/tags/afterlife-7.1_r67" />
 
   <remote  name="private"
            fetch="ssh://git@github.com" />
 
-  <default revision="refs/heads/14"
+  <default revision="refs/tags/afterlife-7.1_r67"
            remote="github"
            sync-j="4" />
 
