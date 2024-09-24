@@ -8,6 +8,7 @@
   <project path="hardware/xiaomi" name="AfterlifeOS/hardware_xiaomi" revision="14" />
   <project path="manifest" name="AfterlifeOS/android_manifest" />
   <project path="packages/apps/AfterLab" name="AfterlifeOS/packages_apps_AfterLab" />
+  <project path="packages/apps/ExactCalculator" name="AfterlifeOS/packages_apps_ExactCalculator" />
   <project path="packages/apps/GameSpace" name="AfterlifeOS/packages_apps_GameSpace" />
   <project path="packages/apps/ParanoidSense" name="AfterlifeOS/packages_apps_ParanoidSense" />
   <project path="packages/apps/OmniStyle" name="AfterlifeOS/packages_apps_OmniStyle" />
